@@ -88,6 +88,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         func get(from url: URL, completion: @escaping(HTTPClientResponse) -> Void) {
             
             messages.append((url,completion))
+            print("hello")
         }
         
         func complete(with error: Error, at index: Int = 0) {
