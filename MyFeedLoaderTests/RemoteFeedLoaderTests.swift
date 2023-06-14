@@ -84,36 +84,20 @@ class RemoteFeedLoaderTests: XCTestCase {
         
         let (sut, client) =  makeSUT()
         
-        let item1 = FeedItem(
+        let item1 = makeItem(
             id: UUID(),
-            description: nil,
-            location: nil,
             image: URL(string: "https://image-string-1.com")!)
         
-        let item1JSON = [
-            "id": item1.id.uuidString,
-            "image": item1.image.absoluteString
-        ]
-        
-        let item2 = FeedItem(
+        let item2 = makeItem(
             id: UUID(),
             description: "description",
             location: "location",
             image: URL(string: "https://image-string-2.com")!)
         
-        let item2JSON = [
-            "id": item2.id.uuidString,
-            "description": item2.description,
-            "location": item2.location,
-            "image": item2.image.absoluteString
-        ]
+        let itemsJSON = [item1.json, item2.json]
         
-        let itemsJSON = [
-            "items": [item1JSON, item2JSON]
-        ]
-        
-        expect(sut, completeWith: .success([item1, item2]), when: {
-            let json = try! JSONSerialization.data(withJSONObject: itemsJSON)
+        expect(sut, completeWith: .success([item1.model, item2.model]), when: {
+            let json = makeItemJson(itemsJSON)
             client.complete(withStatusCode: 200, data: json)
         })
     }
@@ -137,6 +121,28 @@ class RemoteFeedLoaderTests: XCTestCase {
         action()
         
         XCTAssertEqual(capturedResults, [result], file: file, line: line)
+    }
+    
+    private func makeItem(id: UUID, description: String? = nil, location: String? = nil, image: URL) -> (model: FeedItem, json: [String: Any]) {
+        
+        let item = FeedItem(id: id, description: description, location: location, image: image)
+        
+        let json = [
+            "id" : id.uuidString,
+            "description": description,
+            "location": location,
+            "image": image.absoluteString
+        ].reduce(into: [String: Any]()) { (acc, e) in
+            if let value = e.value { acc[e.key] = value}
+        }
+        
+        return (item, json)
+    }
+    
+    private func makeItemJson( _ items: [[String: Any]]) -> Data {
+        let items = ["items": items]
+        
+        return try! JSONSerialization.data(withJSONObject: items)
     }
     
     private class HTTPClientSpy: HTTPClient {
