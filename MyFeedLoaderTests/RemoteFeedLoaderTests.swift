@@ -87,13 +87,13 @@ class RemoteFeedLoaderTests: XCTestCase {
         
         let item1 = makeItem(
             id: UUID(),
-            image: URL(string: "https://image-string-1.com")!)
+            imageURL: URL(string: "https://image-string-1.com")!)
         
         let item2 = makeItem(
             id: UUID(),
             description: "description",
             location: "location",
-            image: URL(string: "https://image-string-2.com")!)
+            imageURL: URL(string: "https://image-string-2.com")!)
         
         let itemsJSON = [item1.json, item2.json]
         
@@ -124,15 +124,15 @@ class RemoteFeedLoaderTests: XCTestCase {
         XCTAssertEqual(capturedResults, [result], file: file, line: line)
     }
     
-    private func makeItem(id: UUID, description: String? = nil, location: String? = nil, image: URL) -> (model: FeedItem, json: [String: Any]) {
+    private func makeItem(id: UUID, description: String? = nil, location: String? = nil, imageURL: URL) -> (model: FeedItem, json: [String: Any]) {
         
-        let item = FeedItem(id: id, description: description, location: location, image: image)
+        let item = FeedItem(id: id, description: description, location: location, image: imageURL)
         
         let json = [
             "id" : id.uuidString,
             "description": description,
             "location": location,
-            "image": image.absoluteString
+            "image": imageURL.absoluteString
         ].reduce(into: [String: Any]()) { (acc, e) in
             if let value = e.value { acc[e.key] = value}
         }
