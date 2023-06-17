@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "245B2732-808B-42BB-B69B-BBEBBFCAD970"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C975507-C665-4DB2-8DB4-10DAE1B12505"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFeedLoader/Feed API/RemoteFeedLoader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "load(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4C975507-C665-4DB2-8DB4-10DAE1B12505 - c1ec9ecd7382e510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MyFeedLoader.HTTPClientResponse) -&gt; () in MyFeedLoader.RemoteFeedLoader.load(completion: (MyFeedLoader.RemoteFeedLoader.Result) -&gt; ()) -&gt; ()"
+                  moduleName = "MyFeedLoader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshay/Desktop/Swift/MyFeedLoaderDemo/MyFeedLoader/MyFeedLoader/Feed%20API/RemoteFeedLoader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "4C975507-C665-4DB2-8DB4-10DAE1B12505 - c1ec9ecd7382e510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MyFeedLoader.HTTPClientResponse) -&gt; () in MyFeedLoader.RemoteFeedLoader.load(completion: (MyFeedLoader.RemoteFeedLoader.Result) -&gt; ()) -&gt; ()"
+                  moduleName = "MyFeedLoader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshay/Desktop/Swift/MyFeedLoaderDemo/MyFeedLoader/MyFeedLoader/Feed%20API/RemoteFeedLoader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3DD8768-FE5A-4B10-BD65-267D6C62FA35"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFeedLoaderTests/RemoteFeedLoaderTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "test_load_deliversErrorOn200HTTPResponseWithInvalidResponse()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3DD8768-FE5A-4B10-BD65-267D6C62FA35 - ee98b4bceef11680"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFeedLoaderTests.RemoteFeedLoaderTests.test_load_deliversErrorOn200HTTPResponseWithInvalidResponse() -&gt; ()"
+                  moduleName = "MyFeedLoaderTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshay/Desktop/Swift/MyFeedLoaderDemo/MyFeedLoader/MyFeedLoaderTests/RemoteFeedLoaderTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "D3DD8768-FE5A-4B10-BD65-267D6C62FA35 - 96d298c174349254"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MyFeedLoaderTests.RemoteFeedLoaderTests.test_load_deliversErrorOn200HTTPResponseWithInvalidResponse() -&gt; ()"
+                  moduleName = "MyFeedLoaderTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshay/Desktop/Swift/MyFeedLoaderDemo/MyFeedLoader/MyFeedLoaderTests/RemoteFeedLoaderTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05364DA4-7B24-4E76-846D-25FD6557E555"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFeedLoaderTests/RemoteFeedLoaderTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "test_load_deliversNoItemOn200HTTPResponseWithEmptyJSONArray()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
