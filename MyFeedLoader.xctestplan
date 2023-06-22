@@ -1,0 +1,46 @@
+{
+  "configurations" : [
+    {
+      "id" : "07DAE0B0-AF7A-454E-95D5-FB91C066C7D1",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:MyFeedLoader.xcodeproj",
+          "identifier" : "BAC7E35C2A30024700BB1CBB",
+          "name" : "MyFeedLoader"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MyFeedLoader.xcodeproj",
+      "identifier" : "BAC7E35C2A30024700BB1CBB",
+      "name" : "MyFeedLoader"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MyFeedLoader.xcodeproj",
+        "identifier" : "BAC7E36D2A30024B00BB1CBB",
+        "name" : "MyFeedLoaderTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MyFeedLoader.xcodeproj",
+        "identifier" : "BAC7E3772A30024B00BB1CBB",
+        "name" : "MyFeedLoaderUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

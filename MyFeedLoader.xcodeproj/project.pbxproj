@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA2594692A450C4E000A2E25 /* MyFeedLoader.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyFeedLoader.xctestplan; sourceTree = "<group>"; };
 		BA27B6FC2A3E681D00DD9340 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		BA80BACC2A412F88002C2211 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		BAC3349E2A3BDDF200E5AF12 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		BAC7E3542A30024600BB1CBB = {
 			isa = PBXGroup;
 			children = (
+				BA2594692A450C4E000A2E25 /* MyFeedLoader.xctestplan */,
 				BAC7E35F2A30024700BB1CBB /* MyFeedLoader */,
 				BAC7E3712A30024B00BB1CBB /* MyFeedLoaderTests */,
 				BAC7E37B2A30024B00BB1CBB /* MyFeedLoaderUITests */,
